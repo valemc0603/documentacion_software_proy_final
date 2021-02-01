@@ -10,6 +10,7 @@
 % Dependencies for Excel2Latex
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
+\usepackage{multirow}
 % Dependencies for Excel2Latex
 \usepackage{listings}
 \usepackage{tikz}
@@ -24,7 +25,7 @@ colorlinks=true,linkcolor={black},citecolor={black},
 urlcolor={black}}
 \usepackage[\MYhyperrefoptions]{hyperref}
 %Titulo del documento
-\title{Final Project: Using Arduino as a tool to build an automatic pet feeder system}
+\title{Propuesta 2: Aplicación para pizzeria}
 
 \makeatletter
 \newcommand{\linebreakand}{%
@@ -39,17 +40,9 @@ urlcolor={black}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 
 \author{
-	\IEEEauthorblockN{Angulo Zumbado Jose Daniel}
-	\IEEEauthorblockA{\textit{Estudiante Ing. en Sistemas de Computación}\\ 
-	\textit{Universidad Fidélitas}\\
-	San José, Costa Rica \\
-	\href{mailto:jdaz25@gmail.com}{jdaz25@gmail.com}}
+	
 \and
-	\IEEEauthorblockN{Montoya Abarca Marianela}
-	\IEEEauthorblockA{\textit{Estudiante Ing. en Sistemas de Computación}\\ 
-	\textit{Universidad Fidélitas}\\
-	San José, Costa Rica \\
-	\href{mailto:mari.montab@gmail.com}{mari.montab@gmail.com}}
+	
 \linebreakand % <------------- \and with a line-break
 	\IEEEauthorblockN{Morales Cordero Valeria\hfill}
 	\IEEEauthorblockA{\textit{Estudiante Ing. en Sistemas de Computación}\\
@@ -57,11 +50,7 @@ urlcolor={black}}
 	San José, Costa Rica \\
 	\href{mailto:valemc0603@gmail.com}{valemc0603@gmail.com}}
 \and
-	\IEEEauthorblockN{Raygada Romero Allan Eduardo} 
-	\IEEEauthorblockA{\textit{Estudiante Ing. en Sistemas de Computación}\\
-	\textit{Universidad Fidélitas}\\
-	San José, Costa Rica \\
-	\href{mailto:allenraygada@gmail.com}{allenraygada@gmail.com}}
+	
 
 }
 
@@ -75,19 +64,17 @@ urlcolor={black}}
 %\thispagestyle{plain}
 %\pagestyle{plain}
 
-\begin{abstract}
+%\begin{abstract}
 	
 	
-\end{abstract}
+%\end{abstract}
 
 
-
-
-\section{Nombre del proyecto}
 
 
 \section{Antecedentes}
 
+Hoy en día restaurantes famosos (Burger King, McDonald’s, TacoBell, KFC, entre otros) están mejorando mucho a tal punto de que usan aplicaciones ya sea para tener el control del inventario, productos, para un fin administrativo, ordenar comida, entre otros. También la situación actual del país causada por la pandemia del Covid-19 genera que mucha gente no vaya a los restaurantes por miedo a contagiarse y optan por usar aplicaciones para pedir comida desde la comodidad de su casa. La aplicación de la pizzería ayudará al restaurante mejorar sus servicios, mejorar el orden en su economía, expandir su zona de venta. Así como beneficiar a los clientes de pedir desde la comodidad de su casa y con todos los servicios que ofrece el restaurante.
 
 \section{Marco Legal}
 
@@ -106,34 +93,83 @@ La venta o las licencias que se darán a terceros del programa se realizarán ba
 \item Duración del contrato
 \end{itemize}
 
+Las licencias no serán exclusivas para el cliente, esto quiere decir que el programa se podrá vender a otras empresas, salvo alguna excepción estipulada en un contrato. El cliente que adquiera el software podrá utilizarlo única y exclusivamente para uso de su empresa no podrá dar licencias ni usarlo para programas de capacitación a otras empresas.
+
+La desarrolladora entregará la documentación externa del software al cliente, con el fin del uso correcto del mismo, asimismo minimizar los problemas que se puedan generar al instalar o utilizar el programa.
+
 \section{Ubicación del proyecto}
+
+La pizzeria llamada D´Pelicula a la que se le venderá el software esta ubicada en San José, Goicoechea, Ipis, Zetillal, a 300 metros Este de la comisaria de Zetillal.
+La misma solo tiene una tienda por el momento.
+
 \section{Justificación del proyecto}
-\section{Ubicación del proyecto}
+
 \section{Objetivos}
 \section{Objetivo General}
-\section{Objetivo Especifico}
+\section{Objetivos Específicos}
 
 \section{Descripción del proyecto}
+
+El proyecto se basa en la creación de una aplicación para una pizzería; el cliente podrá registrarse a la aplicación, podrá elegir para comer en el restaurante o que sea a domicilio; tendrá un menú de pizzas a elegir: pastas, refrescos entre otros, código promocional para un descuento e imprimir o guardar la factura de la compra. 
+También con la aplicación tendrá un uso administrativo; los que tengan acceso como modo administrador podrá ver las compras, ventas, usuarios y contraseñas registrados, modificar el menú, cambiar precios, entre otros.
+Se pretende crear un software que sea fácil de usar, que tenga un interfaz agradable para el usuario, incluso crear un usuario y contraseña tanto para el cliente como para el administrador.
+
 \section{Fuente de financiamiento}
+
+La desarrolladora de software solicitará un préstamo al banco para cubrir los salarios de los ingenieros que trabajan en la empresa, también para la adquisición de los servidores o bases de datos (de ser requerido); el mismo será cancelado con el pago que realicé el cliente cuando se le entregue el software final.
+
+
+
 \section{Actividades de ejecución de la obra}
+
+\begin{enumerate}
+
+\item Establecer con el cliente las especificaciones del programa.
+\item Crear el contrato con todos los términos y condiciones.
+\item Iniciar con el financiamiento del proyecto.
+\item Crear el software.
+\item Realizar las pruebas al programa.
+\item Crear la documentación interna y externa del programa.
+\item Entregar el software.
+\end{enumerate}
+
+Es importante recalcar que las actividades pueden disminuir o aumentar según se vaya realizando cada una.
 \section{Cronograma de ejecución de la obra}
+
+\begin{table}[H]
+  \centering
+  \caption{Cronograma}
+    \begin{tabular}{|l|c|}
+    \toprule
+    \multicolumn{1}{|c|}{\textbf{Actividades}} & \textbf{Semana} \\
+    \midrule
+    \multicolumn{1}{|l|}{\multirow{3}[2]{*}{Establecer con el cliente las especificaciones del programa.}} & \multirow{3}[2]{*}{5} \\
+          &  \\
+          &  \\
+    \midrule
+    \multirow{2}[2]{*}{Crear el contrato con todos los términos y condiciones.} & \multirow{2}[2]{*}{$6\leftrightarrow7$} \\
+          &  \\
+    \midrule
+    \multirow{2}[2]{*}{Iniciar con el financiamiento del proyecto.} & \multirow{2}[2]{*}{$8\leftrightarrow9$} \\
+          &  \\
+    \midrule
+    \multirow{2}[2]{*}{Crear el software.} & \multirow{2}[2]{*}{$10\leftrightarrow11$} \\
+          &  \\
+    \midrule
+    \multirow{2}[2]{*}{Realizar las pruebas al programa.} & \multirow{2}[2]{*}{$12\leftrightarrow13$} \\
+          &  \\
+    \midrule
+    \multirow{2}[2]{*}{Crear la documentación interna y externa del programa.} & \multirow{2}[2]{*}{$14\leftrightarrow15$} \\
+          &  \\
+    \midrule
+    Entregar el software. & 16 \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+
+
 \section{Estudio de factibilidad}
 
-
-
-
-\section{Recomendaciones}
-
-\section{Referencias}
-
-
-%%\noindent
-%[5] Vidal-Silva, C., Lineros, M. I., Uribe, G. E., \& Olmos, C. J. (2019). Electrónica para Todos con el Uso de Arduino: Experiencias Positivas en la Implementación de Soluciones Hardware- Software. \url{https://doi.org/10.4067/S0718-07642019000600377}\\%%
-%
-%\noindent
-%[6] Mandado, E., Marcos, J., Fernandez, C. and Annesto, J. I., AUTOMATAS Programables Y Sistemas de Automatización, 2009. \url{https://bookdown.org/alberto\_brunete/intro\_automatica/referencias.html}
-%
-%\noindent
-%[6] Tocci, R. (2007). Sistemas digitales Principios y Aplicaciones.\\
 
 \end{document}
