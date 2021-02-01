@@ -1,0 +1,172 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{xcolor}
+% Dependencies for Excel2Latex
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+% Dependencies for Excel2Latex
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{karnaugh-map}
+\usepackage{adjustbox}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+%Habilita bookmarks en PDF
+\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},
+urlcolor={black}}
+\usepackage[\MYhyperrefoptions]{hyperref}
+%Titulo del documento
+\title{Propuesta 1: Administrador de Proyectos para Muebles y Sobre de Cocina SyS}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign} \hfill
+}
+\makeatother
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\author{
+	\IEEEauthorblockN{\hfill Kenneth Abarca Coronado \hfill}
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sistemas de Computación}\\ 
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:Kabarca20607@ufide.ac.cr}{Kabarca20607@ufide.ac.cr}}
+\and
+	\IEEEauthorblockN{\hfill Jonathan Chavarria Peña \hfill}
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sist. Computación}\\ 
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:jonach1998@gmail.com}{jonach1998@gmail.com}}
+\and
+	\IEEEauthorblockN{\hfill Erick Corrales Montero\hfill}
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sist. Computación}\\
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:ecorrales00712@ufide.ac.cr}{ecorrales00712@ufide.ac.cr}}
+\linebreakand % <------------- \and with a line-break
+	\IEEEauthorblockN{\hfill Keren Jimenez Fernandez \hfill} 
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sist. Computación}\\
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:kjimenez80215@ufide.ac.cr}{kjimenez80215@ufide.ac.cr}}
+\and
+	\IEEEauthorblockN{\hfill Sebastián Lizano Fernández \hfill} 
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sist. Computación}\\
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:slizano40347@ufide.ac.cr}{slizano40347@ufide.ac.cr}}
+\and
+	\IEEEauthorblockN{\hfill Morales Cordero Valeria\hfill}
+	\IEEEauthorblockA{\textit{Estudiante Ing. en Sist. Computación}\\
+	\textit{Universidad Fidélitas}\\
+	San José, Costa Rica \\
+	\href{mailto:valemc0603@gmail.com}{valemc0603@gmail.com}}
+
+}
+
+
+%Inicio del documento
+\begin{document}
+
+\maketitle
+
+%Agrega numeracion a las paginas
+%\thispagestyle{plain}
+%\pagestyle{plain}
+
+%\begin{abstract}
+%	
+%	
+%\end{abstract}
+
+
+
+
+
+\section{Antecedentes}
+Actualmente, los diferentes procesos administrativos, económicos, y organizacionales se están gestionando por medio de herramientas básicas: Para el aspecto económico se utiliza la herramienta de Excel y su respaldo consiste en llaves USB físicas. En el aspecto administrativo de gestión de datos, la herramienta utilizada es una agenda física donde se mantienen la información de cada proyecto guardada. Y en el aspecto organizacional y laboral se trabaja por medio de chats de Whatsapp. Básicamente, no muy eficiente ya que el registro depende total y completamente de sistemas externos y software de terceros.
+
+\section{Marco Legal}
+En este aspecto, se maneja más que todo la confidencialidad cliente-empresario. Lo que viene siendo direcciones físicas de los hogares, datos importantes del cliente, ya sean números de cuenta para transacciones etc. Todos estos datos se deben considerar para mantener una buena relación cliente-empresario y tomarse en cuenta para la realización de este proyecto.
+
+
+\section{Ubicación del proyecto}
+La empresa está ubicada en San José, Vázquez de Coronado, Patalillo. Actualmente solo existe una sede. La aplicación podrá ser utilizada en las diferentes locaciones a conveniencia del cliente o el administrador de la empresa.
+
+
+\section{Justificación del proyecto}
+Primeramente, se va a ayudar no solo al cliente, sino, también al empresario permitiendo que este tipo de procesos (cotizaciones, manejo de datos del cliente, comunicación con dicho cliente, citas de instalación, datos de proyectos pasados para facilitación de próximos proyectos, manejo de diferentes costos entre otros). Todos estos aspectos reunidos en una sola aplicación, va a facilitar al empresario su trabajo y mejorar sobre todo la calidad, eficiencia y continuidad de este.
+
+\section{Objetivos}
+
+\subsection{Objetivo General}
+Diseñar una aplicación de gestión y administración de datos para la empresa Muebles y Sobre de Cocina SyS con la finalidad de facilitar el trabajo del empresario.
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+\item Observar la situación actual y antecedentes del empresario para contextualizar las mejoras que se realizarán.
+\item Interpretar las mejoras que se quieren implementar y analizarlas para el mayor beneficio del empresario.
+\item Desempeñar un prototipo con base a las mejoras de mayor impacto previamente analizadas.
+\end{itemize}
+
+
+\section{Descripción del proyecto}
+
+El proyecto se basa en la creación de una aplicación de administración y gestión de datos de una empresa de remodelación e instalación de muebles y sobres de cocina. Dicha empresa se encarga de realizar diferentes procesos con la finalidad de llevar un producto y servicio de calidad. Dichos procesos se pueden describir como: La comunicación del cliente hacia el empresario, los procesos de medición y almacenamiento de dichas medidas, la realización de cotizaciones hacia los clientes (incluyendo materiales, instalación con mano de obra, y transporte), las cotizaciones de proveedores de materiales importantes como maderas, granito natural, y implementos varios que se deben de conseguir, el proceso de construcción de los muebles y sobres de granito, y finalmente la tramitación del pago debido a cuentas del banco. La finalidad de este proyecto es poder implementar una aplicación que poséala capacidad de poder facilitar estos procesos descritos en un solo lugar. Esto para poder asegurar una calidad de producto y servicio y mantener un registro de datos para futuros proyectos.
+
+Seguidamente se detallarán los procesos que la aplicación realizará para cumplir con las necesidades previamente descritas. En el aspecto de comunicación del cliente con el empresario, se implementará un sistema de chat en donde podrán enviar todo tipo de documentos necesarios para la realización de este trabajo. Este chat funcionará para mantener un orden del proyecto actual y de referencia para futuros planes. Este chat se guardará en una nube aparte proporcionada por un agente tercero. Seguidamente, se efectuará un apartado en la aplicación donde se almacenen las debidas medidas realizadas por el empresario. Estas medidas funcionarán como base para la realización de un modelo 3D del mueble a realizar, esto dándole una perspectiva más clara al empresario y al cliente del proyecto que se va a efectuar.
+
+Posteriormente, se hará un apartado en donde se podrán realizar cotizaciones, incluyendo los aspectos previamente mencionados, para poder enviarlas a los clientes y poder tener un mejor acceso a la información. Al igual que con las cotizaciones que se reciben por parte de los proveedores. En el aspecto de la construcción de los muebles, se tomará como referencia el modelo 3D realizado, y las medidas previamente almacenadas. Todo esto permite un proceso de construcción más eficiente y ordenado gracias a la información guardada en la aplicación.
+
+En el aspecto de la instalación, se realiza un apartado en donde se almacene información importante como: Lista de materiales a llevar, lista de herramientas necesarias para dicha instalación, detalles adicionales a petición del cliente etc. Esto para poder levar un proceso de instalación más fluido y eficaz. Finalmente, se hará el apartado de cierre de proyecto en donde quede en constancia la satisfacción del cliente y su firma indicando lo mismo. Seguidamente, este proyecto se almacenará en una nube para futuras referencias. El último proceso para realizar es el de la tramitación del dinero. En este apartado de la aplicación, se podrán enviar comprobantes de pago, números de cuenta, y también se implementará un sistema de pago electrónico directo de la aplicación. Esto facilitará al cliente el pago y el recibimiento de este al administrador. Es importante clarificar que dicha aplicación tendrá dos roles claves: El rol de administrador utilizado por el empresario y las personas a quienes este les de acceso, y el rol de cliente que tendrá accesos limitados por el mismo administrador.
+
+\section{Fuente de financiamiento}
+La fuente de financiamiento será el mismo empresario utilizando fondos de la empresa destinados para este tipo de proyectos electrónicos.
+
+\section{Actividades de ejecución de la obra}
+Por el momento, las actividades a realizar son la descripción detallada de la memoria descriptiva y el avance de la realización del prototipo.
+
+\section{Cronograma de ejecución de la obra}
+Por el momento en la semana 2 se realizó las actividades previamente descritas y se irán añadiendo más conforme avanza el curso.
+
+\section{Estudio de factibilidad}
+\subsection{Factibilidad Técnica}
+En el caso de esta empresa, no se cuenta con el personal capacitado necesario, ni con las tecnologías necesarias para la realización de este software. En este caso, en el análisis de costos de fuente de financiamiento, se previó la contratación de personal tercero capacitado para el desarrollo de este software, y también la adquisición del hardware necesario para esto.
+
+\subsection{Factibilidad Económica}
+Los costos están justificados, ya que, al hacer esta inversión grande, los beneficios que esta aplicación traerá son lo suficientemente positivos para ayudar al empresario a mantener un orden y entregar un producto de calidad en menor tiempo.
+
+\subsection{Factibilidad Operacional}
+Esta aplicación será utilizada constantemente por el empresario y por el cliente usuario que esté involucrado en el proyecto.
+
+\subsection{Aprobación de la Solicitud}
+Dicha solicitud será enviada a la empresa que envió los requerimientos y dicha empresa decidirá si aprobar o no el proyecto.
+
+%\section{Recomendaciones}
+%
+%\section{Referencias}
+
+
+%%\noindent
+%[5] Vidal-Silva, C., Lineros, M. I., Uribe, G. E., \& Olmos, C. J. (2019). Electrónica para Todos con el Uso de Arduino: Experiencias Positivas en la Implementación de Soluciones Hardware- Software. \url{https://doi.org/10.4067/S0718-07642019000600377}\\%%
+%
+%\noindent
+%[6] Mandado, E., Marcos, J., Fernandez, C. and Annesto, J. I., AUTOMATAS Programables Y Sistemas de Automatización, 2009. \url{https://bookdown.org/alberto\_brunete/intro\_automatica/referencias.html}
+%
+%\noindent
+%[6] Tocci, R. (2007). Sistemas digitales Principios y Aplicaciones.\\
+
+\end{document}
