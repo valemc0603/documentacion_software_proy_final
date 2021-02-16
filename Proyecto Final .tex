@@ -384,6 +384,50 @@ N° & Nombre Requerimiento \\
 \end{enumerate}
 %fin%
 %inicio%
+\item Nombre del requerimiento: Facturación instantenea
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Meseros.
+	\item Administradores.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente cuando hace su pedido debe solicitar la factura.
+	\item El sistema utilizara la informacion que el cliente ingreso cuando se registro, se necesitará el nombre, el numero de telefono, el correo y la dirección de residencia. Tambien se incluirá la informacion del pedido que realizó.
+	\item El sistema enviará la factura al correo del cliente y guardará la misma en la base de datos de la empresa.
+	\item Tanto administradores como meseros pueden ver y enviar las facturas existentes.
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Si no se solicito la factura al momento de realizar el pedido, esta no se puede hacer despues.
+	\item Se le pueden reenviar la factura al cliente si este indica que no le llegó.
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: 8 Tipo de servicio (Express o restaurante)
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Meseros.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item Antes de que el cliente comience hacer el pedido debe indicar si el mismo será para comer en el restaurante, para llevar o para express.
+	\item El mesero podrá ver la opción elegida por el cliente ya que de esta manera preparará la orden.
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item El cliente podrá cambiar de tipo de servicio solo llamando al restaurante.
+	\item El mesero deberá anotar en las notas del pedido si se solicito un cambio en el pedido.
+	\end{enumerate}
+\end{enumerate}
+%fin%
+%inicio%
 \item Nombre del requerimiento:
 \begin{enumerate}[a)]
 \item Actores
