@@ -302,132 +302,266 @@ N° & Nombre Requerimiento \\
 \end{table}%
 
 %\subsection{Especificación de requerimientos funcionales}
-%
-%\begin{enumerate}
-%%inicio%
-%\item Nombre del requerimiento: Ordenar pedidos de comida
-%
-%\begin{enumerate}[a)]
-%\item Actores
-%	\begin{enumerate}[a.]
-%	\item Clientes.
-%	\item Meseros.
-%	\end{enumerate}
-%	
-%\item Detalle del requerimiento
-%	\begin{enumerate}[P{a}so 1.]
-%	\item Confirmar orden.
-%	\item Elegir los ítems deseados del menú.
-%	\item Observar menú dentro de la aplicación.
-%	\item Agregar detalles necesarios, opcionalmente.
-%	\end{enumerate}
-%	
-%\item Reglas del negocio
-%	\begin{enumerate}[a]
-%	\item Las ordenes deben limitarse única y exclusivamente a lo previamente especificado en el menú.
-%	\end{enumerate}
-%\end{enumerate}
-%%fin%				
-%
-%%inicio%
-%\item Nombre del requerimiento: Registro de clientes
-%\begin{enumerate}[a)]
-%\item Actores
-%	\begin{enumerate}[a]
-%	\item Clientes.
-%	\end{enumerate}
-%	
-%\item Detalle del requerimiento
-%	\begin{enumerate}[P{a}so 1.]
-%	\item Confirmar registro.
-%	\item Registrar dirección.	
-%	\item Establecer contraseña.
-%	\item Registrar nombre y apellido.
-%	\item Registrar un correo electrónico. 
-%	\item Registrar un número de teléfono.
-%	\item Opcionales: Registrar método de pago.
-%	\item Verificar usuario por medio de correo. electrónico.
-%	
-%	
-%	\end{enumerate}
-%	
-%\item Reglas del negocio
-%	\begin{enumerate}[a]
-%	\item Verificar especificación detallada de las direcciones físicas brindadas mediante servicios externos de GPS. 
-%	\item Verificar validez del número de teléfono brindado para finalidades comunicativas. 
-%
-%	\end{enumerate}
-%\end{enumerate}
-%%fin%
-%
-%%inicio%
-%\item Nombre del requerimiento: Aceptar promociones
-%\begin{enumerate}[a)]
-%\item Actores
-%	\begin{enumerate}[a]
-%	\item Clientes.
-%	\end{enumerate}
-%\item Detalle del requerimiento
-%	\begin{enumerate}[P{a}so 1.]
-%	\item Confirmar pedido.
-%	\item Elegir promoción deseada.
-%	\item Realizar el canje necesario.
-%	\item Verificar la aplicabilidad de las promociones. 	
-%	\item Observar en el menú las promociones disponibles. 
-%
-%	\end{enumerate}
-%	
-%\item Reglas del negocio
-%	\begin{enumerate}[a]
-%	\item No se permite la aplicación de una promoción sobre otra.
-%	\item Puede aplicar restricciones dependiendo de la promoción seleccionada.
-%	\end{enumerate}
-%\end{enumerate}
-%%fin%
-%%inicio%
-%\item Nombre del requerimiento: Facturación instantenea
-%\begin{enumerate}[a)]
-%\item Actores
-%	\begin{enumerate}[a]
-%	\item Clientes.
-%	\item Meseros.
-%	\item Administradores.
-%	\end{enumerate}
-%\item Detalle del requerimiento
-%	\begin{enumerate}[P{a}so 1.]
-%	\item El cliente cuando hace su pedido debe solicitar la factura.
-%	\item El sistema utilizara la información que el cliente ingreso cuando se registro, se necesitará el nombre, el numero de teléfono, el correo y la dirección de residencia. También se incluirá la información del pedido que realizó.
-%	\item El sistema enviará la factura al correo del cliente y guardará la misma en la base de datos de la empresa.
-%	\item Tanto administradores como meseros pueden ver y enviar las facturas existentes.
-%	\end{enumerate}
-%\item Reglas del negocio
-%	\begin{enumerate}[a]
-%	\item Si no se solicito la factura al momento de realizar el pedido, esta no se puede hacer despues.
-%	\item Se le pueden reenviar la factura al cliente si este indica que no le llegó.
-%	\end{enumerate}
-%\end{enumerate}
-%%fin%
-%
-%%inicio%
-%\item Nombre del requerimiento: 8 Tipo de servicio (Express o restaurante)
-%\begin{enumerate}[a)]
-%\item Actores
-%	\begin{enumerate}[a]
-%	\item Clientes.
-%	\item Meseros.
-%	\end{enumerate}
-%\item Detalle del requerimiento
-%	\begin{enumerate}[P{a}so 1.]
-%	\item Antes de que el cliente comience hacer el pedido debe indicar si el mismo será para comer en el restaurante, para llevar o para express.
-%	\item El mesero podrá ver la opción elegida por el cliente ya que de esta manera preparará la orden.
-%	\end{enumerate}
-%\item Reglas del negocio
-%	\begin{enumerate}[a]
-%	\item El cliente podrá cambiar de tipo de servicio solo llamando al restaurante.
-%	\item El mesero deberá anotar en las notas del pedido si se solicito un cambio en el pedido.
-%	\end{enumerate}
-%\end{enumerate}
-%%fin%
+
+\begin{enumerate}
+%inicio%
+\item Nombre del requerimiento: Ordenar pedidos de comida
+
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a.]
+	\item Clientes.
+	\item Meseros.
+	\end{enumerate}
+	
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item Confirmar orden.
+	\item Elegir los ítems deseados del menú.
+	\item Observar menú dentro de la aplicación.
+	\item Agregar detalles necesarios, opcionalmente.
+	\end{enumerate}
+	
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Las ordenes deben limitarse única y exclusivamente a lo previamente especificado en el menú.
+	\end{enumerate}
+\end{enumerate}
+%fin%				
+
+%inicio%
+\item Nombre del requerimiento: Registro de clientes
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\end{enumerate}
+	
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item Confirmar registro.
+	\item Registrar dirección.	
+	\item Establecer contraseña.
+	\item Registrar nombre y apellido.
+	\item Registrar un correo electrónico. 
+	\item Registrar un número de teléfono.
+	\item Opcionales: Registrar método de pago.
+	\item Verificar usuario por medio de correo. electrónico.
+	
+	
+	\end{enumerate}
+	
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Verificar especificación detallada de las direcciones físicas brindadas mediante servicios externos de GPS. 
+	\item Verificar validez del número de teléfono brindado para finalidades comunicativas. 
+
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Aceptar promociones
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item Confirmar pedido.
+	\item Elegir promoción deseada.
+	\item Realizar el canje necesario.
+	\item Verificar la aplicabilidad de las promociones. 	
+	\item Observar en el menú las promociones disponibles. 
+
+	\end{enumerate}
+	
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item No se permite la aplicación de una promoción sobre otra.
+	\item Puede aplicar restricciones dependiendo de la promoción seleccionada.
+	\end{enumerate}
+\end{enumerate}
+%fin%
+%inicio%
+\item Nombre del requerimiento: Facturación instantenea
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Meseros.
+	\item Administradores.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente cuando hace su pedido debe solicitar la factura.
+	\item El sistema utilizara la información que el cliente ingreso cuando se registro, se necesitará el nombre, el numero de teléfono, el correo y la dirección de residencia. También se incluirá la información del pedido que realizó.
+	\item El sistema enviará la factura al correo del cliente y guardará la misma en la base de datos de la empresa.
+	\item Tanto administradores como meseros pueden ver y enviar las facturas existentes.
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Si no se solicito la factura al momento de realizar el pedido, esta no se puede hacer despues.
+	\item Se le pueden reenviar la factura al cliente si este indica que no le llegó.
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Historial de pedidos
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Administradores.
+	\item Sistema.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente presionara el botón de ver pedido anterior.
+	\item El sistema le mostrara al cliente el pedido anterior.
+	\item El cliente podrá presionar el botón de ordenar 	pedido anterior.
+	\item El sistema agrega el pedido anterior a la 		compra.
+	\item El cliente presionara el botón de continuar 		para seguir la compra.
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Si el pedido anterior tenía alguna promoción no se aplicará en el pedido, al menos de que la promoción siga activa.
+	\item El historial de pedidos se mostrará con un mes de antigüedad, pasado un mes el pedido se borrará del historial.
+	\item El historial de pedido que se mostrara es en base al usuario que ingreso, no se mostrara el pedido anterior de otro usuario.
+
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Mostrar Recomendaciones Según Pedidos Anteriores 
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Sistema. 
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente deberá ver dentro de la aplicación verá el menú. 
+	\item El sistema tomará de base los últimos pedidos que realizó el usuario para crear la recomendación. 
+	\item El sistema tomará los ingredientes de los últimos pedidos para mostrar sugerencias de productos que incluyan dichos ingredientes. 
+	\item Arriba del menú se activará una sección donde mostrará las recomendaciones según el usuario haga sus compras. 
+	\item Se mostrará una opción de ocultar las recomendaciones si el cliente gusta. 
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item El cliente debe realizar al menos una compra para que el sistema muestre sugerencias. 
+	\item Si el cliente desactiva las recomendaciones, podrá activarlas de nuevo manualmente. 
+	\item El cliente podrá limpiar el historial de recomendaciones para que el sistema empiece desde cero. 
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Inicio de Sesión con Usuario y Contraseña
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Administradores.
+	\item Clientes.
+	\item Sistema. 
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El administrador o cliente deberá ir a la opción de inicio de sesión que estará defino de por un icono de una persona. 
+	\item El sistema mostrará al administrador o cliente una ventana con cajas de texto para llenar el nombre de usuario y contraseña. 
+	\item El administrador o cliente deberá llenar las casillas y presionar ingresar. 
+	\item Al haber iniciado sesión el administrador o cliente tendrá opciones diferentes según su tipo de cuenta. 
+	\item Si el administrador o cliente gusta podrá activar un autentificador de código para tener más seguridad. 
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Es necesario haber creado una cuenta previamente. 
+	\item Si el administrador o cliente olvidó la contraseña, deberá seleccionar la opción de Olvidé mi contraseña, para recibir un link de cambio de contraseña al correo electrónico. 
+	\item Si no se encuentra la cuenta el sistema mostrará un aviso de que no existe o los datos están incorrectos, en caso de que la contraseña está incorrecta. 
+	\item Solo las cuentas de administrador podrán recibir pedidos, comentarios de productos y modificar el menú. 
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Tipo de servicio (Express o restaurante)
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\item Meseros.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item Antes de que el cliente comience hacer el pedido debe indicar si el mismo será para comer en el restaurante, para llevar o para express.
+	\item El mesero podrá ver la opción elegida por el cliente ya que de esta manera preparará la orden.
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item El cliente podrá cambiar de tipo de servicio solo llamando al restaurante.
+	\item El mesero deberá anotar en las notas del pedido si se solicito un cambio en el pedido.
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Distintos métodos de pago.
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente deberá ver en la orden final, la opción de menú desplegable de los distintos métodos de pago.
+	\item El menú se despliega y muestra las opciones de pago disponibles: Efectivo o tarjeta.
+	\item El cliente elige su método de pago preferido. 
+	\item Si el cliente escoge la opción de efectivo, se muestra una ventana emergente donde se despliega una entrada de texto donde el cliente digitará con la cantidad que pagará (por tema de vuelto). El número ingresado deberá ser mayor o igual al total de la orden
+	\item Si el cliente decide elegir la opción de tarjeta se despliega un menú emergente diferente.
+	\item El menú emergente muestra cuatro entradas de texto: El titular de la tarjeta, el número de la tarjeta, la fecha de expiración y el código de seguridad. 
+	\item El cliente procede a digitar los datos correspondientes para procesar su pago. 
+Por último, el cliente presiona la opción de “Realizar pago” y la orden se tramita
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Los métodos de pago por medio de tarjeta solo están disponibles si la tarjeta es: Visa o Mastercard. 			\item No se acepta American Express.
+	\item No se permite dividir el pago en dos métodos. Solamente se puede utilizar o efectivo o tarjeta.
+	\item En caso de utilizar tarjeta, a la hora de la entrega del pedido se debe mostrar una identificación para poder demostrar el titular de la tarjeta. 
+
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
+%inicio%
+\item Nombre del requerimiento: Capacidad de habilitar la ubicación en tiempo real para mayor precisión en los pedidos express.
+\begin{enumerate}[a)]
+\item Actores
+	\begin{enumerate}[a]
+	\item Clientes.
+	\end{enumerate}
+\item Detalle del requerimiento
+	\begin{enumerate}[P{a}so 1.]
+	\item El cliente deberá ver ya contado con la orden de compra.
+	\item Se le desplegara una opción de retiro de su comida.
+	\item El cliente elige su método de retiro 
+	\item Si el cliente elige la opción de retiro en restaurante se le informara cuando su comida esta lista para el retiro.
+	\item Si el cliente quiere el método de envió, el cliente podrá ver su estado de envió siempre y cuando nos permita enlazar su GPS con la aplicación.
+	\item Por ultimo se le informara al cliente cuando estemos cerca del destino para que haga retiro de su comida. 
+	\end{enumerate}
+\item Reglas del negocio
+	\begin{enumerate}[a]
+	\item Se el cliente no permite enlazar el GPS con la aplicación no se podrá llevar a cabo en el envío. 
+	\item El cliente cuenta con 15 minutos de retiro en restaurante. 
+	\item El cliente si elige el método de envió tendrá 5 a 10 minutos para el retiro de dicho envió. 
+
+	\end{enumerate}
+\end{enumerate}
+%fin%
+
 %%inicio%
 %\item Nombre del requerimiento:
 %\begin{enumerate}[a)]
@@ -446,9 +580,10 @@ N° & Nombre Requerimiento \\
 %	\end{enumerate}
 %\end{enumerate}
 %%fin%
-%
-%\end{enumerate}
-%%FIN DE REQUERIMENTOS FUNCIONALES%
+
+\end{enumerate}
+%FIN DE REQUERIMENTOS FUNCIONALES%
+
 \section{Casos de uso}
 
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
@@ -716,7 +851,7 @@ N° & Nombre Requerimiento \\
   \begin{adjustbox}{width=0.47\textwidth}
     \begin{tabular}{|p{11.215em}|c|c|}
     \toprule
-    \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Mostrar Historial de Pedidos Anteriores al Cliente}} \\
+    \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Mostrar Recomendaciones Según Pedidos Anteriores}} \\
     \midrule
     \textbf{Versión} & \multicolumn{2}{c|}{190221} \\
     \midrule
