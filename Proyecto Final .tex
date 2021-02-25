@@ -1,7 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -29,7 +29,7 @@ colorlinks=true,linkcolor={black},citecolor={black},
 urlcolor={black}}
 \usepackage[\MYhyperrefoptions]{hyperref}
 %Titulo del documento
-\title{Proyecto final: Aplicación para pizzeria}
+\title{Proyecto Final: Aplicación para pizzeria}
 
 \makeatletter
 \newcommand{\linebreakand}{%
@@ -316,15 +316,21 @@ N° & Nombre Requerimiento \\
 	
 \item Detalle del requerimiento
 	\begin{enumerate}[P{a}so 1.]
-	\item Confirmar orden.
-	\item Elegir los ítems deseados del menú.
-	\item Observar menú dentro de la aplicación.
-	\item Agregar detalles necesarios, opcionalmente.
+	\item Sistema actualiza el menú del día con los platos disponibles del día y lo muestra en la tabulación de menú de la aplicación para el análisis del usuario.
+	
+\item El usuario abre la aplicación, ingresa a la tabulación del menú donde puede visualizar diferentes tipos de comidas disponibles, aquí puede seleccionar uno o más tipos de comidas y las cantidades correspondientes deseadas. Agregar detalles necesarios, opcionalmente.
+
+\item El usuario tiene la opción de ingresar datos adicionales de la orden por medio del botón "agregar especificaciones", aquí puede ingresar especificaciones adicionales relacionadas a la orden como la exclusión de ingredientes, inclusión de ingredientes, agregar adicionales, tipo de empaque, etc.
+
+\item El usuario ingresa al carrito por medio de un botón con icono de carrito donde el sistema le genera el resumen de lo seleccionado por el usuario en los pasos anteriores. El usuario verifica que los datos estén correctos y procede a confirmar la orden por medio del botón "Confirmar orden y procesar".
+\item El sistema almacena la orden junto con los datos del usuario adicionalmente le envía al usuario un tiempo estimado en el cual la orden estará lista.
+\item El sistema envía la orden a el restaurante correspondiente a ser procesada.
+
 	\end{enumerate}
 	
 \item Reglas del negocio
 	\begin{enumerate}[a]
-	\item Las ordenes deben limitarse única y exclusivamente a lo previamente especificado en el menú.
+	\item Las ordenes deben limitarse únicamente a lo disponible en el menú. Para poder completar un orden el usuario debe estar registrado en el sistema.
 	\end{enumerate}
 \end{enumerate}
 %fin%				
@@ -334,29 +340,34 @@ N° & Nombre Requerimiento \\
 \begin{enumerate}[a)]
 \item Actores
 	\begin{enumerate}[a]
-	\item Clientes.
+	\item Usuario 
+	\item Sistema 
+	\item Base de datos
 	\end{enumerate}
 	
 \item Detalle del requerimiento
 	\begin{enumerate}[P{a}so 1.]
-	\item Confirmar registro.
-	\item Registrar dirección.	
-	\item Establecer contraseña.
-	\item Registrar nombre y apellido.
-	\item Registrar un correo electrónico. 
-	\item Registrar un número de teléfono.
-	\item Opcionales: Registrar método de pago.
-	\item Verificar usuario por medio de correo. electrónico.
-	
-	
+\item El usuario ingresa a la aplicación por medio del móvil o en página web.
+\item En la esquina superior derecha el sistema podrá indicar si el usuario este logueado o no con un icono de usuario genérico.
+\item El usuario da clic a este icono donde tendrá la opción de ingresar o crear una cuenta nueva.
+\item El usuario selecciona la opción de crear cuenta nueva, el sistema lo llevara la página del formulario de registro.
+\item El usuario ingresara el nombre y el apellido.
+\item El usuario ingresara su correo electrónico.
+\item El usuario establecerá una contraseña. El sistema indica las especificaciones necesarias para la contraseña.
+\item El sistema le brinda al usuario la opción de registrar un método de pago, en este caso lo llevaría a otra tabulación. Para continuar con el proceso regular el usuario sigue al próximo paso.
+\item El usuario ingresa su dirección, al completar esto el sistema le muestra al usuario una ventana de servicio GPS donde deberá mostrar y confirmar la dirección proporcionada en los renglones anteriores. El sistema valida esta dirección.
+\item El usuario ingresa su número telefónico y selecciona el método de verificación: texto o llamada. El sistema le envía el código de notificación al teléfono ingresado por medio del método seleccionado.
+\item El sistema verifica el código y habilita el botón de confirmar datos.
+\item El usuario le da clic al botón "confirmar datos" y el sistema almacena los datos y cuenta de usuario en la base de datos.
+\item El sistema le envía al usuario correo de verificación de cuenta para activarla.
+\item El usuario verifica por medio de darle clic al enlace que está incluido en el correo de verificación.
+\item El sistema recibe la verificación y activa la cuenta del usuario de manera permanente y habilita sus funciones.
 	\end{enumerate}
 	
 \item Reglas del negocio
-	\begin{enumerate}[a]
-	\item Verificar especificación detallada de las direcciones físicas brindadas mediante servicios externos de GPS. 
-	\item Verificar validez del número de teléfono brindado para finalidades comunicativas. 
-
-	\end{enumerate}
+\begin{enumerate}[a]
+\item Usuarios deben poder demostrar dirección por medio de servicio externo GPS incluida en la aplicación para verificar estos datos. Usuario debe tener un número telefónico vigente para asegurar comunicación segura durante procesos de envió, etc. La contraseña debe ser de mínimo 8 caracteres e incluir mínimo un número y un carácter especial.
+\end{enumerate}
 \end{enumerate}
 %fin%
 
@@ -365,23 +376,28 @@ N° & Nombre Requerimiento \\
 \begin{enumerate}[a)]
 \item Actores
 	\begin{enumerate}[a]
-	\item Clientes.
+	\item Usuario
+	\item Sistema
 	\end{enumerate}
 \item Detalle del requerimiento
 	\begin{enumerate}[P{a}so 1.]
-	\item Confirmar pedido.
-	\item Elegir promoción deseada.
-	\item Realizar el canje necesario.
-	\item Verificar la aplicabilidad de las promociones. 	
-	\item Observar en el menú las promociones disponibles. 
+	
+\item El usuario abre la aplicación, se dirige a la tabulación "promociones" Verificar la aplicabilidad de las promociones
+\item En promociones el sistema ordena las promociones disponibles y una corta descripción de lo que incluye como los platillos requeridos, cantidades y montos mínimo de compra.
+\item El usuario observa la lista proporcionada y analiza cuales promociones más le interesa en base a la orden que desea completar.
+\item El usuario completa una orden, antes de confirmar orden y enviar a procesar el sistema proporciona la opción de "Aplicar Promoción".
+\item El sistema genera una lista de las promociones disponibles cuando el usuario da clic en "Aplicar promoción".
+\item El sistema revisa los requisitos y condiciones de cada promoción para verificar que la orden cumpla para poder aplicar la promoción, las promociones que cumplen se verán marcadas en color, el sistema marcara las que no cumplen en blanco y negro.
+\item El usuario podrá escoger una de las promociones en color para aplicarla a la orden. El usuario completa esto por medio de seleccionar la promoción y dar clic en "Aplicar Promoción".
+\item El sistema proporcionara el resumen de la orden, y del total original calculara y mostrara la promoción o descuento que se está aplicando.
+\item El usuario luego verificara la orden y la enviara a procesar.
 
 	\end{enumerate}
 	
 \item Reglas del negocio
-	\begin{enumerate}[a]
-	\item No se permite la aplicación de una promoción sobre otra.
-	\item Puede aplicar restricciones dependiendo de la promoción seleccionada.
-	\end{enumerate}
+\begin{enumerate}[a]
+\item El usuario debe estar registrado para poder beneficiar de las promociones disponibles. La orden debe cumplir con los requisitos listados en la promoción que se desea aplicar. Por cada orden solo se puede aplicar 1 promoción.
+\end{enumerate}
 \end{enumerate}
 %fin%
 %inicio%
@@ -589,7 +605,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.43em}|}{\textbf{Orden de pedidos}} \\
@@ -634,7 +650,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.43em}|}{\textbf{Registro de usuario}} \\
@@ -696,7 +712,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 2}
   \label{tab:addlabel}%
 \end{table}%
@@ -704,7 +720,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.42\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.43em}|}{\textbf{Aplicar promociones a ordenes}} \\
@@ -753,7 +769,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 3}
   \label{tab:addlabel}%
 \end{table}%
@@ -761,7 +777,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.44\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Facturación instantenea}} \\
@@ -796,7 +812,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 4}
   \label{tab:addlabel}%
 \end{table}%
@@ -804,7 +820,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.44\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Historial de pedido}} \\
@@ -840,7 +856,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 5}
   \label{tab:addlabel}%
 \end{table}%
@@ -848,7 +864,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'R6'
 \begin{table}[H]
   \centering
-  \begin{adjustbox}{width=0.47\textwidth}
+  \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|c|c|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Mostrar Recomendaciones Según Pedidos Anteriores}} \\
@@ -885,7 +901,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 6}
   \label{tab:addlabel}%
 \end{table}%
@@ -893,7 +909,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'R7'
 \begin{table}[H]
   \centering
-   \begin{adjustbox}{width=0.47\textwidth}
+   \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|p{5.355em}|c|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Inicio de Sesión con Usuario y Contraseña}} \\
@@ -931,7 +947,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 7}
   \label{tab:addlabel}%
 \end{table}%
@@ -939,7 +955,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-   \begin{adjustbox}{width=0.47\textwidth}
+   \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Tipo de servicio (Express o restaurante)}} \\
@@ -971,7 +987,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 8}
   \label{tab:addlabel}%
 \end{table}%
@@ -980,7 +996,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-   \begin{adjustbox}{width=0.47\textwidth}
+   \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{Distintos Métodos de Pago}} \\
@@ -1019,7 +1035,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 9}
   \label{tab:addlabel}%
 \end{table}%
@@ -1027,7 +1043,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[H]
   \centering
-   \begin{adjustbox}{width=0.47\textwidth}
+   \begin{adjustbox}{width=0.45\textwidth}
     \begin{tabular}{|p{11.215em}|r|r|}
     \toprule
     \textbf{RF id del requisito>} & \multicolumn{2}{p{37.355em}|}{\textbf{capacidad de habilitar la ubicación en tiempo real para mayor precision en los pedidos express }} \\
@@ -1065,7 +1081,7 @@ Por último, el cliente presiona la opción de “Realizar pago” y la orden se
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \caption{Caso de uso 10}
   \label{tab:addlabel}%
 \end{table}%
